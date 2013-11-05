@@ -33,3 +33,6 @@ d10237,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/l
 6c4ee1,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383685172,
 9e7dff,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383685173,
 9650ef,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383685175,
+86bfb2,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383687457,
+d7a21a,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383687486,
+2c1b9a,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383687491,
