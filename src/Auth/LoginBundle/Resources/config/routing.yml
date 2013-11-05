@@ -1,0 +1,5 @@
+auth_login_homepage:
+    pattern:  /login
+    defaults: { _controller: AuthLoginBundle:Default:index }
+
+

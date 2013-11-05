@@ -1,0 +1,4 @@
+auth_login:
+    resource: "@AuthLoginBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,7 @@
+parameters:
+#    auth_login.example.class: Auth\LoginBundle\Example
+
+services:
+#    auth_login.example:
+#        class: %auth_login.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
