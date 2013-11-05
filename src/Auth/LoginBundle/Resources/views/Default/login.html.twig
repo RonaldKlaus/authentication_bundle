@@ -1,0 +1,16 @@
+{% extends 'AuthLoginBundle:Default:index.html.twig' %}
+{% block container %}
+	<form class='' method="POST" action="{{ path('auth_login_homepage') }}">
+		<h2>Please sign in</h2>
+		<input type='text' placeholder='email' name='loginEmail'>
+		<input tpye='password' placeholder='Password' name='loginPassword'>
+		<button type='submit'>Sign in</button>
+	</form>
+
+	<!-- ALERT In Bootstrap it will work -->
+	{% if error is defined %}
+		<div class='alert-info fade in'> <strong>Login Failed</strong></div>
+	{% else %}
+		<div class='alert-info fade in'> <strong>Login Success</strong></div>
+	{% endif %}
+{% endblock %}

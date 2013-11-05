@@ -10,16 +10,18 @@ class __TwigTemplate_4689743b00d307ad1599f3eeca7bae256bba07779760bceba782e6afb98
         $this->parent = false;
 
         $this->blocks = array(
+            'container' => array($this, 'block_container'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "Hello ";
-        echo twig_escape_filter($this->env, (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")), "html", null, true);
-        echo "!
-";
+        $this->displayBlock('container', $context, $blocks);
+    }
+
+    public function block_container($context, array $blocks = array())
+    {
     }
 
     public function getTemplateName()
@@ -27,13 +29,8 @@ class __TwigTemplate_4689743b00d307ad1599f3eeca7bae256bba07779760bceba782e6afb98
         return "AuthLoginBundle:Default:index.html.twig";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  20 => 1,);
     }
 }
