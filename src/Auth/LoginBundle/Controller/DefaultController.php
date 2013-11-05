@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    public function indexAction(Request $request)
+    public function indexAction()
     {	
     	$request = $this->getRequest();
     	if ($request->getMethod() == 'POST') {

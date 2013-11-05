@@ -28,3 +28,8 @@ cb7689,::1,GET,http://localhost/symfony/authentication_bundle/web/app_dev.php/lo
 2fd544,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383684544,
 9543fb,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383684549,
 c67c00,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383684558,
+f6e73f,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383685127,
+d10237,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383685136,
+6c4ee1,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383685172,
+9e7dff,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383685173,
+9650ef,::1,POST,http://localhost/symfony/authentication_bundle/web/app_dev.php/login,1383685175,
