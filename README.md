@@ -27,6 +27,7 @@ Steps to create a login-form with symfony2
 --------------------------------
 - mow the application needs some mapping between the bundle and the database
 - we are using doctrine (maybe install with composer? Shouldn't be necessary)
+
 1. create mapping:
     
     $ php app/console doctrine:mapping:import bundleName
@@ -44,5 +45,7 @@ Steps to create a login-form with symfony2
 
 6) Add login-form in special login.html.twig
 --------------------------------------------
-
-7) 
+- add form-tag with method='POST' and action={{ path('rout_name_to_login_action') }}
+- add input for email (add name-parameter)
+- add input for password (add name-parameter)
+- add button for submit (add submit-parameter)
