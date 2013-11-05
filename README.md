@@ -8,6 +8,7 @@ Steps to create a login-form with symfony2
 - create folder in XAMMP/htdocs
 - copy framework in this folder
 - create bundle with
+
     $ php app/console generate:bundle bundleName
 
 2) Create Database
@@ -27,8 +28,11 @@ Steps to create a login-form with symfony2
 - mow the application needs some mapping between the bundle and the database
 - we are using doctrine (maybe install with composer? Shouldn't be necessary)
 1. create mapping:
+    
     $ php app/console doctrine:mapping:import bundleName
+
 2. create entities (create the models of the tables in the database)
+
     $ php app/console doctrine:generate:entities bundleName
 
 5) Add login-action to controller
