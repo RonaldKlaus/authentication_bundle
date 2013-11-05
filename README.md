@@ -36,16 +36,17 @@ Steps to create a login-form with symfony2
 
     $ php app/console doctrine:generate:entities bundleName
 
-5) Add login-action to controller
+5) Add login-form in special login.html.twig
+--------------------------------------------
+- add form-tag with method='POST' and action={{ path('route_name_to_login_action') }}
+- add input for email (add name-parameter)
+- add input for password (add name-parameter)
+- add button for submit (add submit-parameter)
+
+6) Add login-action to controller
 ---------------------------------
 - add Request-Class with use-command
 - initialize EntityManager 
 - initialize Repository (to search in the DB)
+- get parameters from Request-Object (email and password)
 - add user-validation via DB check
-
-6) Add login-form in special login.html.twig
---------------------------------------------
-- add form-tag with method='POST' and action={{ path('rout_name_to_login_action') }}
-- add input for email (add name-parameter)
-- add input for password (add name-parameter)
-- add button for submit (add submit-parameter)
