@@ -138,6 +138,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Auth\\LoginBundle\\Controller\\DefaultController::indexAction',  '_route' => 'auth_login_homepage',);
         }
 
+        // auth_login_signup
+        if ($pathinfo === '/signup') {
+            return array (  '_controller' => 'Auth\\LoginBundle\\Controller\\DefaultController::signupAction',  '_route' => 'auth_login_signup',);
+        }
+
         // _welcome
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

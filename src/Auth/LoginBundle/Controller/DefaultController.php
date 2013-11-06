@@ -4,6 +4,7 @@ namespace Auth\LoginBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Auth\LoginBundle\Entity\Users;
 
 class DefaultController extends Controller
 {
@@ -25,5 +26,30 @@ class DefaultController extends Controller
     	}
 
     	return $this->render('AuthLoginBundle:Default:login.html.twig', array('error' =>"Login Failed"));
+    }
+
+    public function signupAction() {
+    	$request = $this->getRequest();
+    	if ($request->getMethod() == 'POST') {
+    		$firstname = $request->get('signupFirstname');
+    		$lastname = $request->get('signupLastname');
+    		$email = $request->get('signupEmail');
+    		$password = $request->get('signupPassword');
+    		$gender = $request->get('signupGender');
+    		// NOW WE CAN USE THE USERS-ENTITY
+    		$user = new Users();
+    		$user->setFirstname($firstname);
+    		$user->setLastname($lastname);
+    		$user->setEmail($email);
+    		$user->setPassword($password);
+    		$user->setGender($gender);
+    		// get entity-manager
+    		$em = $this->getDoctrine()->getEntityManager();
+    		// add entity
+    		$em->persist($user);
+    		// create in DB
+    		$em->flush();
+    	}
+    	return $this->render('AuthLoginBundle:Default:signup.html.twig');
     }
 }
